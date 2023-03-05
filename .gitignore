@@ -1,0 +1,10 @@
+# Build products
+result*
+whoisd
+bin
+test
+
+# Crash log files
+crash.log
+
+dist/

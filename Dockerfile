@@ -10,6 +10,6 @@ FROM debian:11
 
 WORKDIR /app
 
-COPY --from=builder /go/src/whoisd /app/whoisd
+COPY --from=builder /go/src/whoisd/whoisd /app/whoisd
 
-ENTRYPOINT ["/app/whoisd"]
+CMD ["/app/whoisd"]

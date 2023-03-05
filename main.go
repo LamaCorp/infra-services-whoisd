@@ -37,6 +37,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("failed to start listener: %v", err)
 	}
+	log.Warnf("listening on %s", lis.Addr())
 
 	for {
 		conn, err := lis.Accept()

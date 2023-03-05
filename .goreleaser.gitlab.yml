@@ -32,7 +32,7 @@ checksum:
   algorithm: sha256
 release:
   gitlab:
-    owner: risson
+    owner: lama-corp/infra/tools/whoisd
     name: whoisd
 changelog:
   skip: false

@@ -32,7 +32,7 @@ checksum:
   algorithm: sha256
 release:
   github:
-    owner: risson
+    owner: rissson
     name: whoisd
 changelog:
   skip: false

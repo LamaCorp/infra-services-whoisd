@@ -2,12 +2,13 @@ package main
 
 import (
 	"bufio"
-	"github.com/likexian/whois"
-	log "github.com/sirupsen/logrus"
 	"io"
 	"net"
 	"os"
 	"time"
+
+	"github.com/likexian/whois"
+	log "github.com/sirupsen/logrus"
 )
 
 const MaxLineLenBytes = 1024
@@ -76,7 +77,7 @@ func handleConn(conn net.Conn) {
 			}
 
 			if _, err := conn.Write([]byte(response + "\n")); err != nil {
-				logger.Warn("failed to write response: %v", err)
+				logger.Warnf("failed to write response: %v", err)
 				return
 			}
 			break

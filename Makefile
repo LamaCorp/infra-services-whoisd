@@ -1,6 +1,6 @@
 TEST?=$$(go list ./... | grep -v 'vendor')
 BINARY=whoisd
-VERSION=0.0.1
+VERSION=0.1.0
 OS_ARCH=linux_amd64
 
 all: build

@@ -6,7 +6,7 @@ COPY ./ ./
 
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o whoisd .
 
-FROM debian:11
+FROM debian:12
 
 WORKDIR /app
 

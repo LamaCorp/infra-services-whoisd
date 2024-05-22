@@ -71,7 +71,10 @@ func handleConn(conn net.Conn) {
 		for scan.Scan() {
 			query := scan.Text()
 
-			response, err := whois.Whois(query)
+			client := whois.NewClient()
+			client.SetDisableStats(true)
+
+			response, err := client.Whois(query)
 			if err != nil {
 				response = "% There was an error processing your request, please try again shortly."
 				logger.Warnf("failed to execute query `%s`: %v", query, err)

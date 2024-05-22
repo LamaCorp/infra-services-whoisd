@@ -80,7 +80,6 @@ release:
     GIT_DEPTH: 0
   script:
     - GITHUB_TOKEN= goreleaser release -f .goreleaser.gitlab.yml --clean
-    - GITLAB_TOKEN= goreleaser release -f .goreleaser.github.yml --clean
   artifacts:
     paths:
       - dist/

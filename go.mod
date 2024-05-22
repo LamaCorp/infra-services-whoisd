@@ -4,7 +4,7 @@ go 1.22
 
 require (
 	github.com/likexian/whois v1.15.3
-	github.com/sirupsen/logrus v1.9.0
+	github.com/sirupsen/logrus v1.9.3
 )
 
 require (

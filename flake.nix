@@ -31,7 +31,7 @@
               git
               go
               gotools
-              golint
+              golangci-lint
               goreleaser
               pre-commit
             ];

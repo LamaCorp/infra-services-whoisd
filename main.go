@@ -84,7 +84,7 @@ func handleConn(conn net.Conn) {
 				logger.Warnf("failed to write response: %v", err)
 				return
 			}
-			break
+			break // nolint:staticcheck
 		}
 
 		done <- struct{}{}

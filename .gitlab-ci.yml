@@ -60,10 +60,6 @@ code_quality:
   stage: qa
   needs: []
 
-license_scanning:
-  stage: qa
-  needs: []
-
 sast:
   stage: security
   needs: []
